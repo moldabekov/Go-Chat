@@ -7,7 +7,7 @@ import (
 	"github.com/gorilla/websocket"
 )
 
-// Global variables is BAD practice
+// Settings global variables is actually BAD practice
 var clients = make(map[*websocket.Conn]bool) // connected clients
 var broadcast = make(chan Message)           // broadcast channel
 var upgrader = websocket.Upgrader{}
@@ -66,9 +66,9 @@ func main() {
 
 	go handleMessages()
 
+	log.Println("http server started on :8000")
 	err := http.ListenAndServe(":8000", nil)
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)
 	}
-	log.Println("http server started on :8000")
 }
