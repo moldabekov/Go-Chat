@@ -16,5 +16,5 @@
 
 ### License
 
-(C) MIT
+2018 MIT (C) M. Moldabekov
 
