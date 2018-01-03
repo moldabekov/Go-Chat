@@ -5,7 +5,7 @@
 ### Installation and running
 0. Grab the source:
 
-   `go get github.com/moldabekov/Go-Chat`
+   `go get github.com/moldabekov/Go-Chat`
    
 1. Install dependencies:
 
@@ -13,11 +13,10 @@
 
 2. Run project:
 
-   `go run .`
+   `go run main.go`
 
 3. Visit `http://127.0.0.1:8000`
 
 ### License
 
 2018 MIT (C) M. Moldabekov
-
